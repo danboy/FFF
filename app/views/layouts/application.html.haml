@@ -15,7 +15,13 @@
 
     :javascript
       $(
-        #{yield :onReady}
+        function(){
+          #{yield :onReady}
+          var floydify = new FFF();
+          $('body').click(function(){
+            floydify.floydify();
+          });
+        }
       );
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

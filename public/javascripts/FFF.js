@@ -1,11 +1,17 @@
 var FFF = function(){
   this.div = document.createElement('div');
-
-  this.getWindow();
   this.body = document.getElementsByTagName('body')[0];
   this.images = [
   "/images/fff-1.png",
-  "/images/fff-2.png"
+  "/images/fff-2.png",
+  "/images/fff-3.png",
+  "/images/fff-4.png",
+  "/images/fff-5.png",
+  "/images/fff-6.png",
+  "/images/fff-7.png",
+  "/images/fff-8.png",
+  "/images/fff-8.png",
+  "/images/fff-10.png"
   ];
 
 };
@@ -13,6 +19,7 @@ var FFF = function(){
 FFF.prototype= {
 
   floydify: function(){
+    this.getWindow();
     fffSrc=this.images[Math.round(Math.random()*this.images.length)];
     if ( fffSrc == undefined )
       fffSrc= this.images[0];
